@@ -1,0 +1,8 @@
+def f(n):
+  l=len(n)-1
+  if l==1:
+    return n[1]+n[0]
+  else:
+    s=n[-1]+f(n[0:l])
+    return s
+f("Priyansh")
