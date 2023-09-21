@@ -1,0 +1,8 @@
+a=input("Enter the word ")
+b=input('Enter the next word ')
+c=list(a)
+d=list(b)
+if c.sort()==d.sort():
+  print('They are anagrams')
+else:
+  print("They are not anagrams")
