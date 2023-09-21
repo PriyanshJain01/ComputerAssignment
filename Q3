@@ -1,0 +1,15 @@
+a={"0":"zero","1":"one","2":"two","3":"three","4":"four","5":"five","6":"six","7":'seven',"8":'eight',"9":"nine"}
+x=input("Enter the number ")
+y=list(x)
+def f(n):
+  p=len(n)-1
+  if p==0:
+    b=n[0]
+    c=a.get(b)
+    return c
+  else:
+    b=n[p]
+    c=a.get(b)
+    s=f(n[0:p])+" "+c
+    return s
+f(y)
